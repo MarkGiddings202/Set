@@ -22,3 +22,26 @@
 
     HINT: Use to the Set to keep track of duplicates
 */
+
+let items = [
+  { name: "banana", quantity: 1, price: 1.95 },
+  { name: "apple", quantity: 1, price: 1.45 },
+  { name: "banana", quantity: 10, price: 0.05 },
+  { name: "candy", quantity: 1, price: 3.5 },
+];
+
+let results = []
+
+let duplicates = new Set()
+
+for(let item of items){
+    if(duplicates.has(item.name)){
+        continue
+    }
+    duplicates.add(item.name)
+    results.push(item)
+}
+
+
+console.log(results)
+console.log(duplicates)
