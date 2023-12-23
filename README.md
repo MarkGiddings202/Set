@@ -1,1 +1,2 @@
 # Set
+SET in JavaScript is a type of object that allows you to store unique values of any type. Whether primitive values or object references. SET is similar to an array, but the main difference is that SET does not allow duplicate values and they are not in any particular order. You can perform operations like add, delete and check if an item exists in a set. However, it does not include any arithmetic operations.
