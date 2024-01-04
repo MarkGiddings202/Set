@@ -5,12 +5,17 @@
     2. How can you print out all the UNIQUE points inside "points"?
 */
 
-let points = [10, 20, 10, 30, 15, 15, 35, 60, 10]
+const points = [10, 20, 10, 30, 15, 15, 35, 60, 10];
 
-let unique = new Set()
+const uniquePoints = new Set();
 
-for(let point of points){
-    unique.add(point)
+for (let i = 0; i < points.length; i++) {
+  uniquePoints.add(points[i]);
 }
 
-console.log(unique)
+console.log(uniquePoints);
+
+// OR
+
+const cheatUniquePoints = new Set(points);
+console.log(cheatUniquePoints);
