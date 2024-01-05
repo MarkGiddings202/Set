@@ -38,6 +38,7 @@ for(let item of items){
     if(duplicates.has(item.name)){
         continue
     }
+    // have not seen it, we need to store it
     duplicates.add(item.name)
     results.push(item)
 }
